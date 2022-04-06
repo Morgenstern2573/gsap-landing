@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@layer base {
+    body {
+        @apply overflow-hidden h-screen;
+        font-family: 'Be Vietnam Pro', sans-serif;
+    }
+
+    nav {
+        @apply flex py-12 justify-center gap-4;
+    }
+}
+
+@layer components {
+    .row {
+        @apply flex p-4 items-center gap-12;
+    }
+
+    .first-row {
+        @apply pt-16;
+    }
+
+    .bold-text {
+        @apply font-bold text-8xl;
+    }
+
+    .second-row .bold-text {
+        @apply pl-36
+    }
+
+    header .copy {
+        @apply flex flex-col font-medium;
+    }
+
+    .round-text {
+        @apply pl-40;
+    }
+    
+    .round-text textPath {
+        @apply text-xs fill-black;
+    }
+
+    .pre-loader {
+        @apply -z-10 absolute;
+        width: 40vw;
+        top: calc(50% - (0.668 * 20vw));
+        left: calc(50% - 20vw);
+    }
+}
