@@ -9,7 +9,7 @@
     }
 
     nav {
-        @apply hidden p-12 justify-center items-center gap-4;
+        @apply opacity-0 flex p-12 justify-center items-center gap-4;
     }
 }
 
@@ -31,7 +31,7 @@
     }
 
     .row {
-        @apply hidden p-4 items-center gap-12;
+        @apply flex p-4 items-center gap-12;
     }
 
     .first-row {

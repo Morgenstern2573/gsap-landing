@@ -430,11 +430,12 @@ body {
 }
 
 nav {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   padding: 3rem;
+  opacity: 0;
 }
 
 *, ::before, ::after {
@@ -482,6 +483,10 @@ nav {
   --tw-backdrop-sepia:  ;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 nav > img {
   width: 120px;
 }
@@ -511,7 +516,7 @@ nav .cta {
 }
 
 .row {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 3rem;
   padding: 1rem;
