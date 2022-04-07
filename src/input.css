@@ -53,6 +53,10 @@
     .round-text {
         @apply pl-40;
     }
+
+    .round-text svg{
+        @apply animate-spin-slow;
+    }
     
     .round-text textPath {
         @apply text-xs fill-black;
