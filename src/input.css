@@ -43,9 +43,13 @@
     }
 
     .pre-loader {
-        @apply -z-10 absolute;
+        @apply -z-20 absolute;
         width: 40vw;
         top: calc(50% - (0.668 * 20vw));
         left: calc(50% - 20vw);
+    }
+
+    .pre-loader > .overlay {
+        @apply absolute inset-0 bg-black bg-opacity-10 -z-0;
     }
 }
