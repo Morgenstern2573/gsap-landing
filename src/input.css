@@ -9,7 +9,7 @@
     }
 
     nav {
-        @apply opacity-0 flex p-12 justify-center items-center gap-4;
+        @apply opacity-0 flex p-4 md:py-8 md:px-4 lg:p-12 justify-center items-center gap-4;
     }
 }
 
@@ -22,36 +22,44 @@
         @apply underline;
     }
 
-    nav .cta {
+    .cta {
         @apply rounded bg-black text-white py-2 px-4;
     }
 
+    nav .cta {
+        @apply hidden md:inline-block;
+    }
+
     .nav-links {
-        @apply mx-20 flex gap-8;
+        @apply hidden md:flex gap-4 lg:gap-8 lg:mx-16 xl:mx-20;
     }
 
     .row {
-        @apply flex p-4 items-center gap-12;
+        @apply flex p-4 justify-center md:justify-start items-center gap-4 md:gap-8 lg:gap-12 text-center md:text-left;
     }
 
     .first-row {
-        @apply pt-16;
+        @apply md:pt-8 lg:pt-16;
     }
 
     .bold-text {
-        @apply font-bold text-8xl;
+        @apply font-bold text-5xl lg:text-6xl xl:text-8xl;
+    }
+
+    .copy {
+        @apply font-medium;
     }
 
     .second-row .bold-text {
-        @apply pl-36
+        @apply lg:pl-16 xl:pl-36
     }
 
-    header .copy {
-        @apply flex flex-col font-medium;
+    .first-row .copy {
+        @apply hidden md:flex md:flex-col;
     }
 
     .round-text {
-        @apply pl-40;
+        @apply hidden md:block pl-20 lg:pl-40;
     }
 
     .round-text svg{
@@ -60,6 +68,10 @@
     
     .round-text textPath {
         @apply text-xs fill-black;
+    }
+
+    .mobile-row {
+        @apply flex flex-col py-4;
     }
 
     .pre-loader {
