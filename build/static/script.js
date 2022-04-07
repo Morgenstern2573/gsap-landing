@@ -1,0 +1,6 @@
+let timeLine = gsap.timeline({defaults: {duration: 1}})
+timeLine.to('.pre-loader > .overlay', {top: '75%'})
+timeLine.to('.pre-loader > .overlay', {top: '50%', delay: 0.5})
+timeLine.to('.pre-loader > .overlay', {top: '25%', delay: 0.5})
+timeLine.to('.pre-loader > .overlay', {top: '0', delay: 0.5})
+timeLine.to('.pre-loader', {width: '80vw', left:0, top: '50%'})

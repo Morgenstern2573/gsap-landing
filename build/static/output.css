@@ -482,8 +482,16 @@ nav {
   --tw-backdrop-sepia:  ;
 }
 
+.hidden {
+  display: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
 .row {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 3rem;
   padding: 1rem;
@@ -529,10 +537,10 @@ header .copy {
 
 .pre-loader > .overlay {
   position: absolute;
-  top: 0px;
+  left: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
+  top: 100%;
   z-index: 0;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;

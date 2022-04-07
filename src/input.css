@@ -15,7 +15,7 @@
 
 @layer components {
     .row {
-        @apply flex p-4 items-center gap-12;
+        @apply hidden p-4 items-center gap-12;
     }
 
     .first-row {
@@ -50,6 +50,6 @@
     }
 
     .pre-loader > .overlay {
-        @apply absolute inset-0 bg-black bg-opacity-10 -z-0;
+        @apply absolute inset-x-0 bottom-0 top-full bg-black bg-opacity-10 -z-0;
     }
 }
