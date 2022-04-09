@@ -75,7 +75,7 @@
     }
 
     .pre-loader {
-        @apply absolute;
+        @apply absolute z-10;
         width: 40vw;
         top: calc(50% - (0.668 * 20vw));
         left: calc(50% - 20vw);
